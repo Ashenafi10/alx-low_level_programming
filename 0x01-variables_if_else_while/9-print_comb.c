@@ -1,31 +1,34 @@
 #include <stdio.h>
 
+
+
 /**
- * main - Lanzador.
  *
- * Return: Always 0.
+ * main - Prints a serie of numbers with commas
+ *
+ *
+ *
+ * Return: Always (Success);
+ *
  */
 
 int main(void)
-{
-int a = '0';
 
+{
+int c;
+for (c = '0'; c <= '9'; c++)
 
-while (a <= '9')
 {
-putchar(a);
-if (a == '9')
+putchar(c);
+if (c != '9')
 {
-																putchar('\n');
-																return (0);
-																			
-				
-					}											else
-{
-																putchar(',');
-																putchar(' ');
-																a++;
-																}
-}
+putchar(',');
+putchar(' ');						
+putchar('\n');
 return (0);
+
 }
+
+
+
+
