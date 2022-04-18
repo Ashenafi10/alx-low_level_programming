@@ -27,22 +27,23 @@ if (sum != 2772)
 diff1 = (sum - 2772) / 2;
 diff2 = (sum - 2772) / 2;
 																if ((sum - 2772) % 2 != 0)
-																diff1++;
+diff1++;
 
 															
 for (index = 0; password[index]; index++)
-																{
-															        if (password[index] >= (33 + diff1))
-																{
+{
+if (password[index] >= (33 + diff1))
+{
 																password[index] -= diff1;
-																																break;
-																																}
-																}
+
+																break;
+}
+}
 																for (index = 0; password[index]; index++)
 																{
 																if (password[index] >= (33 + diff2))
-																												
-password[index] -= diff2;																													break;																}
+
+																password[index] -= diff2;													break;																}
 }																}
 printf("%s", password);
 return (0);
