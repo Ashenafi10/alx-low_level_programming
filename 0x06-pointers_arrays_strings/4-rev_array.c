@@ -18,7 +18,7 @@ while (i < n)
 tmp = *(a + i);
 *(a + i) = *(a + n);
 *(a + n) = tmp;
-																n--;
+n--;
 ++;
 }
 }
