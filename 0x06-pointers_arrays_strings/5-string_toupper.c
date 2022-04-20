@@ -1,30 +1,19 @@
 #include "main.h"
 
 /**
- * cap_string - capitalizes all words of a string
- * @str: pointer to array of chars.
- * Return: pointer to str.
+ * string_toupper - changes all lower case to capital letters
+ * @st: string to modify
+ * Return: char
  */
-char *cap_string(char *str)
+char *string_toupper(char *st)
 {
-char separate[] = " \t\n,;.!?\"(){}";
-int i = 0, j;
+int i;
 
-for (; *(str + i) != '\0'; i++)
+for (i = 0; st[i] != '\0'; i++)
 {
-if (*(str + i) >= 'a' && *(str + i) <= 'z')
-{
-if (i == 0)
-*(str) += ('A' - 'a');
-else
-{
-for (j = 0; j < 13; j++)
-{
-if (*(str + i - 1) == separate[j])
-*(str + i) += ('A' - 'a');
+if (st[i] >= 'a' && st[i] <= 'z')
+st[i] -= 32;
 }
-}
-}
-}
-return (str);
+
+return (st);
 }
