@@ -1,1 +1,3 @@
-_putchar.* 
+*.o
+*.c
+quote
