@@ -17,7 +17,7 @@ for (i = 0; argv[1][i]; i++)
 if (argv[1][i] != '0')
 {
 isn1 = 0;
-																break;
+break;
 }
 
 for (i = 0; argv[2][i]; i++)
@@ -102,9 +102,9 @@ if (i < 0)
 {
 if (addl > 0)
 {
-																add = (nout[k] - '0') + addl;
-																if (add > 9)
-																nout[k - 1] = (add / 10) + '0';
+add = (nout[k] - '0') + addl;
+if (add > 9)
+nout[k - 1] = (add / 10) + '0';
 nout[k] = (add % 10) + '0';
 }
 i = ln1 - 1, j--, addl = 0, ca++, k = lnout - (1 + ca);
