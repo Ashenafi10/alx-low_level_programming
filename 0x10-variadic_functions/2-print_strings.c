@@ -20,8 +20,8 @@ for (i = 0; i < n; i++)
 {
 if (i != n - 1)
 {
-																if (separator != NULL)
-																printf("%s%s", make_nil(va_arg(params, char *)), separator);
+if (separator != NULL)
+printf("%s%s", make_nil(va_arg(params, char *)), separator);
 else
 printf("%s", make_nil(va_arg(params, char *)));
 }
